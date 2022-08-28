@@ -1,6 +1,6 @@
 const transsly = require("./schema-BugS.js")
 
-transsly.findOne({admin: "Transsly"}, async (hata, data) => {
+transsly.findOne({admin: "BugS"}, async (hata, data) => {
     if(hata) return console.error(hata)
 
     if(!data){
@@ -10,8 +10,8 @@ const config = {
 }
 
 
-const transslydata = new transsly({
-name: "Yağıs",
+const transslydata = new BugS({
+name: "Baran",
   age: 18,
   discord_main: "! BugS#0656 / 723254291032440953",
   languages: config.languages,
